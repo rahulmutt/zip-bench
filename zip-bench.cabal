@@ -1,0 +1,27 @@
+name:                zip-bench
+version:             0.1.0.0
+synopsis:            Benchmark for zip package
+description:         Please see README.md
+homepage:            https://github.com/rahulmutt/zip-bench
+license:             BSD3
+license-file:        LICENSE
+author:              Rahul Muttineni
+maintainer:          rahulmutt@gmail.com
+copyright:           2016 Rahul Muttineni
+category:            Compression
+build-type:          Simple
+cabal-version:       >=1.10
+extra-source-files:  README.md
+
+executable zip-bench
+  hs-source-dirs:      src
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5
+                     , zip
+                     , path
+                     , transformers
+                     , containers
+                     , exceptions
+                     , filepath
+                     , directory
