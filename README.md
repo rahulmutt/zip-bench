@@ -23,3 +23,5 @@ The time consumed by `copyEntry` in the `zip` Haskell package is quite huge and 
    and run the following command:
 
    `stack exec -- zip-bench HSbase-4.8.2.0.jar HSghc-prim-0.4.0.0.jar HSinteger-0.5.1.0.jar HSrts-0.1.0.0.jar +RTS -p`
+
+5. Run `time ./merge.sh` to get the upper bound on merging jar files.
