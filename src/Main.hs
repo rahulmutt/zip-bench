@@ -12,8 +12,6 @@ import Control.Monad
 
 main :: IO ()
 main = do
-  p <- parseRelFile "Test.jar"
-  s <- parseRelFile "hello-world.txt" >>= mkEntrySelector
-  createArchive p $ addEntry Store "Hello, World!" s
+  p <- parseRelFile "Tuple.jar"
   entries <- withArchive p $ keys <$> getEntries
   mapM_ print entries
